@@ -1,6 +1,7 @@
 import axios from "axios";
 import Pagination from "components/Pagination";
 import MovieCard from '../../components/MovieCard/index';
+import { BASE_URL } from "utils/requests";
 
 function Listing (){    
 
@@ -9,10 +10,6 @@ function Listing (){
         .then(response => {
             console.log(response.data);
         });
-    
-
-
-
 
     return (  
     <>

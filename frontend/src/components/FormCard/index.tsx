@@ -1,16 +1,16 @@
+import axios, { AxiosRequestConfig } from 'axios';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Movie } from 'types/movie';
-import { useState, useEffect } from 'react';
-import axios, { AxiosRequestConfig } from 'axios';
 import { BASE_URL } from 'utils/requests';
 import { validateEmail } from 'utils/validate';
 import './style.css';
 
 type Props = {
-    movieId : string;
+    movieId: string;
 }
 
-function FormCard ( { movieId } : Props ){
+function FormCard({ movieId }: Props) {
 
     const navigate = useNavigate();
 
@@ -18,7 +18,7 @@ function FormCard ( { movieId } : Props ){
 
     useEffect(() => {
         axios.get(`${BASE_URL}/movies/${movieId}`)
-            .then(response =>{
+            .then(response => {
                 setMovie(response.data);
             });
     }, [movieId]);
@@ -30,7 +30,9 @@ function FormCard ( { movieId } : Props ){
         const email = (event.target as any).email.value;
         const score = (event.target as any).score.value;
 
-        if (!validateEmail(email)){
+        //console.log(email, score);
+
+        if (! validateEmail(email)) {
             return;
         }
 
@@ -40,49 +42,51 @@ function FormCard ( { movieId } : Props ){
             url: '/scores',
             data: {
                 email: email,
-                movieId: movieId,
+                movieID: movieId,
                 score: score
             }
+            
         }
 
-        axios(config).then(response =>{
+        axios(config).then(respo => {
+            console.log(respo.data);
             navigate("/");
         });
     }
 
-    return (    
-    <div className="dsmovie-form-container">
-        <img className="dsmovie-movie-card-image" src={movie?.image} alt={movie?.title} />
-    <div className="dsmovie-card-bottom-container">
+    return (
+        <div className="dsmovie-form-container">
+            <img className="dsmovie-movie-card-image" src={movie?.image} alt={movie?.title} />
+            <div className="dsmovie-card-bottom-container">
 
-        <h3>{movie?.title}</h3>
-        <form className="dsmovie-form" onSubmit={handleSubmit}>
-            <div className="form-group dsmovie-form-group">
-                <label htmlFor="email">Informe seu email</label>
-                <input type="email" className="form-control" id="email" />
-            </div>
-            <div className="form-group dsmovie-form-group">
-                <label htmlFor="score">Informe sua avaliação</label>
-                <select className="form-control" id="score">
-                    <option></option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div className="dsmovie-form-btn-container">
-                <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
-            </div>
-        </form >
-        
-        <Link to="/">
-            <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
-        </Link>
-        
-    </div >
-</div >
+                <h3>{movie?.title}</h3>
+                <form className="dsmovie-form" onSubmit={handleSubmit}>
+                    <div className="form-group dsmovie-form-group">
+                        <label htmlFor="email">Informe seu email</label>
+                        <input type="email" className="form-control" id="email" />
+                    </div>
+                    <div className="form-group dsmovie-form-group">
+                        <label htmlFor="score">Informe sua avaliação</label>
+                        <select className="form-control" id="score">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div className="dsmovie-form-btn-container">
+                        <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
+                    </div>
+                </form >
+
+                <Link to="/">
+                    <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                </Link>
+
+            </div >
+        </div >
     );
 }
 

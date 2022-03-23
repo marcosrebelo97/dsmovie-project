@@ -34,8 +34,7 @@ function Listing (){
     const handlePageChance = (newPageNumber : number) => {
         setPageNumber(newPageNumber)
     }
-
-
+    
     return (  
         <>
             <Pagination page={page} onChange={handlePageChance} />

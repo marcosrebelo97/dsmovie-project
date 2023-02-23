@@ -4,5 +4,3 @@
 
 - O desenvolvimento Full-Stack foi feito utilizando Java e Spring Boot no back-end e React no front-end. 
 
-- Está disponível: https://marcos-dsmovie.netlify.app/
-

@@ -1,4 +1,4 @@
-<h2 align="center"> Projeto Pessoal - Catálogo de Filmes </h1> 
+<h3 align="center"> Catálogo de Filmes </h1> 
 
 - O projeto consiste em uma plataforma de filmes, sendo possível avaliar cada filme entre 1 a 5 entrelas. Basta o usuário inserir e-mail, a avaliação desejada e salvar.
 

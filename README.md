@@ -10,6 +10,6 @@ O projeto consiste em uma plataforma de filmes, sendo possível avaliar cada fil
         - **Java;**
         - **Spring Framework;**
         - **MySQL;**
-        - Para testes das requisições o **Postman.**
+        - Para testes das requisições: **Postman.**
     - No desenvolvimento do front-end e da consumação da API, foram utilizados:
         - A biblioteca **React** com template em **Typescript**, juntamente com o Material-UI.

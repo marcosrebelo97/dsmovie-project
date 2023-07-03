@@ -1,4 +1,4 @@
-<h3 align="center"> Catálogo de Filmes </h1> 
+<h2 align="center">:tv: <br/> Catálogo de Filmes</h2>
 
 O projeto consiste em uma plataforma web de filmes. A página permite a interação do usuário por meio de avaliações dos filmes, possível avaliar cada filme entre 1 a 5 entrelas.
 

@@ -1,15 +1,21 @@
 <h3 align="center"> Catálogo de Filmes </h1> 
 
-O projeto consiste em uma plataforma de filmes, sendo possível avaliar cada filme entre 1 a 5 entrelas. Basta o usuário inserir e-mail, a avaliação desejada e salvar.
+O projeto consiste em uma plataforma web de filmes. A página permite a interação do usuário por meio de avaliações dos filmes, possível avaliar cada filme entre 1 a 5 entrelas.
 
-- O desenvolvimento Full-Stack foi feito utilizando as seguintes tecnologias: 
-    - Para a codificação do software foram utilizadas as IDE’s: 
-        - Visual Studio Code e Spring Tool Suite; 
-        - Versionamento de código: Git e GitHub.
+- Modelo Conceitual:
+
+  ![image](https://github.com/marcosrebelo97/dsmovie-project/assets/37541973/b0917015-1fe8-48dc-910f-e637de7915be)
+ 
+- Tecnologias utilizadas:
     - No desenvolvimento do back-end e a API REST foram utilizados:
         - **Java;**
-        - **Spring Framework;**
+        - **Spring Boot;**
         - **MySQL;**
         - Para testes das requisições: **Postman.**
     - No desenvolvimento do front-end e da consumação da API, foram utilizados:
-        - A biblioteca **React** com template em **Typescript**, juntamente com o Material-UI.
+        - **Typescript;**
+        - **ReactJS.**
+    - Implantação em produção:
+        - Back-end: Heroku;
+        - Front-end web: Netlify;
+        - Banco de Dados: PostgreSQL  

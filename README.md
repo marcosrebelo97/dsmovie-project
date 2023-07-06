@@ -6,7 +6,7 @@
 
   ![image](https://github.com/marcosrebelo97/dsmovie-project/assets/37541973/b0917015-1fe8-48dc-910f-e637de7915be)
  
-- ### Tecnologias utilizadas | Implantação em produção
+  ## Tecnologias utilizadas | Implantação em produção
   #### No desenvolvimento do back-end e a API REST:
   - Java;
   - Spring Boot;

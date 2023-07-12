@@ -8,8 +8,12 @@
  
   ## Tecnologias utilizadas | Implantação em produção
   #### No desenvolvimento do back-end e a API REST:
-  - Java;
-  - Spring Boot;
+  - Java (JDK 11);
+  - Spring Boot
+  - Spring Data JPA
+  - Spring Boot Web
+  - Spring Boot Security
+  - Maven
   - MySQL;
   - Para testes das requisições: Postman.
   #### No desenvolvimento do front-end e consumação da API:

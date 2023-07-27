@@ -19,23 +19,23 @@
 
     ![padrão-camadas](https://github.com/marcosrebelo97/dsmovie-project/assets/37541973/de383280-b218-4909-af90-ed97385e6bba)
 
-  ## Tecnologias Utilizadas
-  #### No desenvolvimento do back-end e a API REST:
-  - Java (JDK 11);
-  - Spring Boot
-  - Spring Data JPA
-  - Spring Boot Web
-  - Spring Boot Security
-  - Maven
-  - MySQL;
-  - Para testes das requisições: [Postman](https://www.postman.com/c).
-  #### No desenvolvimento do front-end e consumação da API:
-  - TypeScript;
-  - ReactJS.
-  #### Implantação em produção:
-  - Back-end: Heroku;
-  - Front-end web: Netlify;
-  - Banco de Dados: PostgreSQL  
+    ## Tecnologias Utilizadas
+    #### No desenvolvimento do back-end e a API REST:
+    - Java (JDK 11);
+    - Spring Boot
+    - Spring Data JPA
+    - Spring Boot Web
+    - Spring Boot Security
+    - Maven
+    - MySQL;
+    - Para testes das requisições: [Postman](https://www.postman.com/c).
+    #### No desenvolvimento do front-end e consumação da API:
+    - TypeScript;
+    - ReactJS.
+    #### Implantação em produção:
+    - Back-end: Heroku;
+    - Front-end web: Netlify;
+    - Banco de Dados: PostgreSQL  
 
 ___
 

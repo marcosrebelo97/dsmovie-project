@@ -6,6 +6,7 @@
   - ### Tabela de Conteúdos:
     - [Modelo de Domínio](#modelo-de-domínio)
     - [Arquitetura de Software](#arquitetura-de-software)
+    - [Instruções de Execução](#instruções-de-execução)
     - [Tecnologias Utilizadas](#tecnologias-utilizadas)
     - [Contribuição](#contribuição)
 
@@ -18,6 +19,43 @@
     A arquitetura do projeto segue o seguinte padrão de camadas abaixo.
 
     ![padrão-camadas](https://github.com/marcosrebelo97/dsmovie-project/assets/37541973/de383280-b218-4909-af90-ed97385e6bba)
+
+  - ### Instruções de Execução
+    
+    - Pré-requisitos:
+      - [Git](https://git-scm.com)
+      - [Node.js](https://nodejs.org/en/)
+      - Java (JDK 11)
+
+    #### 💡 O Frontend precisa que o Backend esteja sendo executado para funcionar.
+    
+    - Execução:
+    
+      ``` bash
+      # Clonar repositório - SSH
+      git clone git@github.com:marcosrebelo97/dsmovie-project.git
+              
+      # Acessar pasta do projeto
+              cd dsmovie
+              
+      # Acessar a pasta back-end
+              cd backend
+  
+      # Instalar as dependências do Maven
+              mvn install
+
+      # Abra a pasta em uma IDE Java (Intellij, por exemplo)
+      # Executar o arquivo `DsmovieApplication.java`
+          
+      # Acessar a pasta do projeto front-end
+              cd frontend
+      
+      # Instalar as dependências
+              npm install
+      
+      # Inicializando o front-end
+              npm run start
+      ```
 
     ## Tecnologias Utilizadas
     #### No desenvolvimento do back-end e a API REST:
